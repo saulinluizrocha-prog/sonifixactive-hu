@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api.php", "destination": "/api/api" },
+    { "source": "/land/order", "destination": "/api/api" }
+  ]
+}
