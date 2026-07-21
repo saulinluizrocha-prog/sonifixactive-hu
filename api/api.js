@@ -8,9 +8,14 @@ const CONFIG = {
   api_domain: 'https://t-api.org'
 };
 
+function redirect(res, url) {
+  res.writeHead(302, { Location: url });
+  res.end();
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
-    return res.redirect(302, '/');
+    return redirect(res, '/');
   }
 
   let body = req.body || {};
@@ -25,7 +30,7 @@ module.exports = async function handler(req, res) {
 
   if (!name || !phone) {
     const referer = req.headers.referer || '/';
-    return res.redirect(302, referer);
+    return redirect(res, referer);
   }
 
   const ip =
@@ -112,13 +117,13 @@ module.exports = async function handler(req, res) {
     const result = await apiRes.json();
 
     if (result && result.status === 'ok' && result.data && result.data.id) {
-      return res.redirect(302, `/success.html?id=${result.data.id}`);
+      return redirect(res, `/success.html?id=${result.data.id}`);
     } else {
       console.error('Terra API response error:', result);
-      return res.redirect(302, `/success.html`);
+      return redirect(res, `/success.html`);
     }
   } catch (err) {
     console.error('Terra API request failed:', err);
-    return res.redirect(302, `/success.html`);
+    return redirect(res, `/success.html`);
   }
 };
