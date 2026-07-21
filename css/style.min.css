@@ -4423,23 +4423,15 @@ position:relative;
   }
 }
 
-/* SONIFIX Layout Fixes */
+/* SONIFIX Clean Price and Image Formatting */
 .promo__pack img,
 .restore__pack img,
 .action__prod,
 .use__prod {
-  max-height: 270px !important;
+  max-height: 340px !important;
   width: auto !important;
   height: auto !important;
   object-fit: contain;
-  margin: 0 auto;
-  display: block;
-}
-
-.promo__pack {
-  margin-left: 0 !important;
-  left: 0 !important;
-  max-width: 280px !important;
 }
 
 .price__old,
@@ -4449,22 +4441,18 @@ position:relative;
   white-space: nowrap !important;
 }
 
-.price__new {
-  font-size: 30px !important;
+.price__old {
+  font-size: 24px !important;
   line-height: 1.2 !important;
-  display: inline-block !important;
 }
 
-.price__old {
-  font-size: 22px !important;
+.price__new {
+  font-size: 34px !important;
   line-height: 1.2 !important;
-  display: inline-block !important;
+  color: #ebc579 !important;
+  font-weight: 700 !important;
 }
 
 .kargo {
-  display: block !important;
-  font-size: 16px !important;
-  margin-top: 5px !important;
-  color: #ebc579 !important;
-  font-weight: 600 !important;
+  display: none !important;
 }
