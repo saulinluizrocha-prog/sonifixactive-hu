@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>
+		Hearing X3
+	</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/jquery-3.3.1.js"></script>
+	<style>
+        .footer {
+            background-color: #fefdf9!important;
+        }
+        .blockRedLine3103 {
+		display:none!important;
+		}
+	</style>
+<script type="text/javascript" src="script_land.js" defer></script></head>
+<body class="ev-date">
+	<div class="promo-bg">
+		<header class="header">
+			<div class="container container-big">
+				<div class="header__content">
+					<div class="header__logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="header__main">
+						<a class="header__link header__link--reviews" href="#d1">
+							Değerlendirmeler
+						</a>
+						
+						<div class="order-wrapper">
+							<div class="header__timer offer-wrapper">
+								<div class="timer__text">Kampanyanın bitişine:</div>
+								<div class="timer__block timer">
+									<div class="timer__hours"><span class="hours"></span></div><span class="timer__dots">:</span>
+									<div class="timer__minutes"><span class="minutes"></span></div><span class="timer__dots">:</span>
+									<div class="timer__seconds"><span class="seconds"></span></div>
+								</div>
+							</div>
+						</div>
+						<a href="#order" class="header__btn btn ever-popup-btn">
+							SİPARİŞ
+						</a>
+					</div>
+					<button class="header__burger">
+						<span class="header-burger__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<section class="promo block">
+			<div class="container">
+				<div class="promo__content">
+					<h2 class="title promo__title">İşitmeyi korumanın yeni yöntemi</h2>
+					<div class="promo__pack">
+						<img src="img/pack.png" alt="">
+					</div>
+					<div class="promo__box">
+						<div class="promo__date">
+							Sadece bugün<span class="date-0" data-format="dd monthFull yyyy"></span>
+						</div>
+						<div class="promo__price price">
+							<div class="price__old">
+
+								<span class="x_price_previous al-cost-promo">€ </span>
+							</div>
+							<div class="price__new">
+
+								<span class="x_price_current al-cost">€ </span><br />
+								<span class="kargo" style="font-size:20px;">Kargo Ücretsiz
+									<!-- + <span class="al-cost-delivery">€</span> Kargo -->
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="promo__form">
+						<form class="x_order_form form al-form" action="/land/order" method="POST">
+							<select class="al-country" name="country" style="display:none"></select>
+							<label class="form__input--wrap">
+								<input class="form__input" placeholder="Adınız" type="text" name="name" autocomplete="name">
+							</label><label class="form__input--wrap">
+								<input class="form__input" placeholder="Telefon numaranız" type="tel" name="phone" autocomplete="tel">
+							</label><button class="btn form__btn" type="submit">SİPARİŞ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="sings block">
+		<div class="container">
+			<ul class="sings__list">
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-1.svg" alt="">
+					<p class="sings__text">
+						işitme duyusunu iyileştirebilir ve kulak çınlamasını ortadan kaldırabilir
+					</p>
+				</li>
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-2.svg" alt="">
+					<p class="sings__text">
+						uyku ve uyanıklık döngüsünü normalleştirmeye yardımcı olur
+					</p>
+				</li>
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-3.svg" alt="">
+					<p class="sings__text">
+						sinir sistemini sakinleştirmeye yardımcı olur
+					</p>
+				</li>
+			</ul>
+			<h2 class="title sings__title">NOT</h2>
+			<h3 class="subtitle sings__subtitle">bu belirtilerde:</h3>
+			<ul class="sings__content">
+				<li class="sings__box">
+					<div class="sings__img">
+						<img src="img/sing-1.jpg" alt="">
+					</div>
+					<h4 class="sings__name">kulak çınlaması</h4>
+				</li>
+				<li class="sings__box">
+					<div class="sings__img">
+						<img src="img/sing-2.jpg" alt="">
+					</div>
+					<h4 class="sings__name">baş dönmesi</h4>
+				</li>
+				<li class="sings__box">
+					<div class="sings__img">
+						<img src="img/sing-3.jpg" alt="">
+					</div>
+					<h4 class="sings__name">ağrı ve rahatsızlık</h4>
+				</li>
+				<li class="sings__box">
+					<div class="sings__img">
+						<img src="img/sing-4.jpg" alt="">
+					</div>
+					<h4 class="sings__name">uyku problemleri</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="problem block bg">
+		<div class="container">
+			<h2 class="title problem__title">
+				Sorunu çözmezseniz daha da kötüleşir
+			</h2>
+			<h3 class="subtitle problem__subtitle">
+				Bunların olmasına izin vermeyin!
+			</h3>
+			<ul class="problem__list">
+				<li class="problem__item">
+					<div class="problem__icon">
+						<img src="img/problem-1.svg" alt="">
+					</div>
+					<div class="problem__info">
+						<h4 class="problem__name">İşitme kaybı</h4>
+						<p class="problem__text">
+							kan akışının bozulması ve iç kulaktaki hücrelerin hasar görmesi nedeniyle ciddi bir risk ortaya çıkar.
+						</p>
+					</div>
+				</li>
+				<li class="problem__item">
+					<div class="problem__icon">
+						<img src="img/problem-2.svg" alt="">
+					</div>
+					<div class="problem__info">
+						<h4 class="problem__name">Kronik hastalıklar</h4>
+						<p class="problem__text">
+							azalmış bağışıklık ve zayıflamış fonksiyonlar cerahatli enfeksiyonlara neden olur ve sık görülen orta kulak iltihabının nedeni haline gelir.
+						</p>
+					</div>
+				</li>
+				<li class="problem__item">
+					<div class="problem__icon">
+						<img src="img/problem-3.svg" alt="">
+					</div>
+					<div class="problem__info">
+						<h4 class="problem__name">Sürekli migren</h4>
+						<p class="problem__text">
+							uyku-uyanıklık döngüsünün bozulması ve yüksek stres seviyeleri sinir sisteminin durumunu olumsuz yönde etkiler
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="action">
+		<div class="container">
+			<div class="action__inner block">
+				<p class="action__title">
+					Sadece bugün<span class="date-0" data-format="dd monthFull yyyy"></span>
+				</p>
+				<img class="action__prod" src="img/product-4_mob.png" loading="lazy" alt="">
+				<div class="action__price price">
+					<div class="price__old">
+						<span class="x_price_previous al-cost-promo">€ </span>
+					</div>
+					<div class="price__new">
+						<span class="x_price_current al-cost">€ </span><br />
+						<span class="kargo" style="font-size:20px;">Kargo Ücretsiz
+							<!-- + <span class="al-cost-delivery">€</span> Kargo -->
+						</span>
+					</div>
+				</div>
+				<form class="action__form x_order_form form al-form" action="/land/order" method="POST">
+					<select class="al-country" name="country" style="display:none"></select>
+					<label class="form__input--wrap action__input">
+						<input class="form__input" placeholder="Ime" type="text" name="name" autocomplete="name">
+					</label><label class="form__input--wrap action__input">
+						<input class="form__input" placeholder="Telefonski broj" type="tel" name="phone" autocomplete="tel">
+					</label><button class="btn action__btn" type="submit">SİPARİŞLER</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<section class="technology block">
+		<div class="container">
+			<div class="technology__content">
+				<div class="technology__info">
+					<h2 class="title technology__title">
+						İşitme sorunlarına karşı gelişmiş AB teknolojileri
+					</h2>
+					<div class="technology__box">
+						<p class="technology__text">
+							Her yıl işitme kaybından muzdarip insanların sayısı artmaktadır. Bunun nedeni çalışma koşulları, kulak enfeksiyonları, kalıtım, sinir sistemi bozuklukları ve yeni nesil virüsler olabilir. Zayıflamış bağışıklık, zararlı etkilerine karşı çok hassastır. Ayrıca, işitme organlarının ek olarak korunması gerekmektedir.
+						</p>
+						<p class="technology__text">
+							Önde gelen Avrupalı uzmanlar, merkezi sinir sistemini doğrudan etkileyerek ve vücudun antiviral bariyer işlevlerini artırarak işitme sorunlarını çözmeye yardımcı olan bir ürün geliştirdiler.
+						</p>
+					</div>
+				</div>
+				<div class="technology__img">
+					<img src="img/technology-img.jpg" alt="">
+					<div class="technology-img__name">
+						Avrupa Sağırlığa Karşı Derneği
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="restore block bg">
+		<div class="container">
+			<div class="restore__content">
+				<div class="restore__box">
+					<h2 class="title restore__title">
+						HearingX3 işitmeyi nasıl geri kazandırdığı
+					</h2>
+					<ul class="restore__list">
+						<li class="restore__item">
+							<div class="restore__icon">
+								<div class="restore-icon__text">1</div>
+							</div>
+							<p class="restore__text">
+								İşitmeyi iyileştirmeye ve kulak çınlamasını ortadan kaldırmaya yardımcı olur. Kan akışını iyileştirebilir. Kas tonusunun ve spazmların azaltılmasına yardımcı olur.
+							</p>
+						</li>
+						<li class="restore__item">
+							<div class="restore__icon">
+								<div class="restore-icon__text">2</div>
+							</div>
+							<p class="restore__text">
+								Sinir sistemini sakinleştirmeye ve bağışıklığı artırmaya yardımcı olur. Bileşimdeki bitki özleri, vücudun genel durumu üzerinde faydalı bir etkiye sahiptir, hücre yenilenmesine ve işitmenin yenilenmesine katkıda bulunur.
+							</p>
+						</li>
+						<li class="restore__item">
+							<div class="restore__icon">
+								<div class="restore-icon__text">3</div>
+							</div>
+							<p class="restore__text">
+								Uyku ve uyanıklık döngüsünü normalleştirmeye yardımcı olur.
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="restore__pack">
+					<img src="img/pack-2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="can block">
+		<div class="container">
+			<h2 class="title can__title">Yaşam kalitenizi artırabilirsiniz!</h2>
+			<div class="can__content">
+				<div class="can__box">
+					<div class="can__img">
+						<img src="img/can-1.jpg" alt="">
+					</div>
+					<ul class="can__list">
+						<li class="can__item">Sınırsız iletişim kurun</li>
+						<li class="can__item">Kulak ağrısını unutun</li>
+						<li class="can__item">Kulak çınlamasını unutun</li>
+					</ul>
+				</div>
+				<div class="can__box">
+					<div class="can__img">
+						<img src="img/can-2.jpg" alt="">
+					</div>
+					<ul class="can__list">
+						<li class="can__item">Kulak uğultusunu unutun</li>
+						<li class="can__item">İşitme hasarı konusunda endişelenmeyin</li>
+						<li class="can__item">Tam teşekküllü bir hayat yaşayın</li>
+					</ul>
+				</div>
+				<div class="can__box">
+					<div class="can__img">
+						<img src="img/can-3.jpg" alt="">
+					</div>
+					<ul class="can__list">
+						<li class="can__item">Her sesin tadını çıkarın</li>
+						<li class="can__item">
+							Sevdiklerinizle iletişim kurmanın keyfini geri kazanın
+						</li>
+						<li class="can__item">En sevdiğiniz müziği tekrar dinleyin</li>
+					</ul>
+				</div>
+				<div class="can__box">
+					<div class="can__img">
+						<img src="img/can-4.jpg" alt="">
+					</div>
+					<ul class="can__list">
+						<li class="can__item">
+							Kuşların cıvıldamalarının ve sevdiklerinizin kahkahalarının keyfini hissedin
+						</li>
+						<li class="can__item">
+							Evdeki ve işteki rahatsızlıklardan kurtulun
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="action">
+		<div class="container">
+			<div class="action__inner action__inner-top_line block">
+				<p class="action__title">
+					Sadece bugün<span class="date-0" data-format="dd monthFull yyyy"></span>
+				</p>
+				<img class="action__prod" src="img/product-4_mob.png" loading="lazy" alt="">
+				<div class="action__price price">
+					<div class="price__old">
+						<span class="x_price_previous al-cost-promo">€ </span>
+					</div>
+					<div class="price__new">
+						<span class="x_price_current al-cost">€ </span><br />
+						<span class="kargo" style="font-size:20px;">Kargo Ücretsiz
+							<!-- + <span class="al-cost-delivery">€</span> Kargo -->
+						</span>
+					</div>
+				</div>
+				<form class="action__form x_order_form form al-form" action="/land/order" method="POST">
+					<select class="al-country" name="country" style="display:none"></select>
+					<label class="form__input--wrap action__input">
+						<input class="form__input" placeholder="Ime" type="text" name="name" autocomplete="name">
+					</label><label class="form__input--wrap action__input">
+						<input class="form__input" placeholder="Telefonski broj" type="tel" name="phone" autocomplete="tel">
+					</label><button class="btn action__btn" type="submit">SİPARİŞ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<section class="testing block">
+		<div class="container">
+			<h2 class="testing__title title">
+				HearingX3, tüketicilerden büyük övgü aldı
+			</h2>
+			<p class="testing__subtitle">
+				HearingX3 alan kişilerde ağırlıklı olarak olumlu dinamikler gözlemlendi ve hiçbir yan etki görülmedi.
+			</p>
+			<div class="testing__content">
+				<div class="testing__item">
+					<div class="testing__item-image testing__item-image-1">
+						<img src="img/testing_image-1.png" loading="lazy" alt="">
+					</div>
+					<p class="testing__item-text">olumlu değişiklikler fark ettiler</p>
+				</div>
+				<div class="testing__item">
+					<div class="testing__item-image testing__item-image-2">
+						<img src="img/testing_image-2.png" loading="lazy" alt="">
+					</div>
+					<p class="testing__item-text">
+						işitme keskinliğini önemli ölçüde geri kazanmayı başardılar
+					</p>
+				</div>
+				<div class="testing__item">
+					<div class="testing__item-image testing__item-image-3">
+						<img src="img/testing_image-3.png" loading="lazy" alt="">
+					</div>
+					<p class="testing__item-text">
+						rahatsızlık ve kulak çınlamasından kurtuldular
+					</p>
+				</div>
+			</div>
+			<a href="#order" class="btn testing__btn ever-popup-btn"> SİPARİŞ</a>
+		</div>
+	</section>
+	<section class="expert">
+		<div class="container">
+			<div class="expert__inner block">
+				<h2 class="expert__title title">Uzman görüşü</h2>
+				<p class="expert__text expert__line">
+					Bitki özlerine dayanan her ürün özel ilgiyi hak eder. Çünkü bileşenlerin etkileşimi karmaşık bir etkiye sahip olabilir.
+				</p>
+				<p class="expert__text">
+					Az<span class="text-bold"> HearingX3</span> böyle bir deva örneğidir. Uykuyu geri kazandırarak ve merkezi sinir sisteminin işleyişini iyileştirerek işitme kaybı problemiyle mücadele etmek çok iyi bir seçenektir. Çünkü işitme organlarının ve tüm organizmanın koruyucu işlevlerinin zayıflaması bizi yeni virüslere karşı daha savunmasız kılar. Tüketiciler arasında olumlu dinamikler ve iyi yorumlar kaydettiğimizi belirtmek önemlidir. Daha ilerleyen durumlarda, iki HearingX3 prosedürünün yapılması önerilir.
+				</p>
+				<div class="expert__info-wrapper">
+					<div class="expert__info">
+						<p class="expert__name text-bold">Johan Klausen</p>
+						<p class="expert__pos">
+							Batı Avrupa Araştırma Merkezi'nin başkanı, işitme duyusunu iyileştirmek için yöntemler ve yardımcı uygulamalar oluşturma konusunda uzmandır. İş tecrübesi 20 yıldır
+						</p>
+					</div>
+				</div>
+				<img class="expert__image" src="img/expert_image.png" loading="lazy" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="reviews" id="reviews">
+		<div class="action">
+			<div class="container">
+				<div class="action__inner block">
+					<p class="action__title">
+						Sadece bugün<span class="date-0" data-format="dd monthFull yyyy"></span>
+					</p>
+					<img class="action__prod" src="img/product-4_mob.png" loading="lazy" alt="">
+					<div class="action__price price">
+						<div class="price__old">
+							<span class="x_price_previous al-cost-promo">€ </span>
+						</div>
+						<div class="price__new">
+							<span class="x_price_current al-cost">€ </span><br />
+							<span class="kargo" style="font-size:20px;">Kargo Ücretsiz
+								<!-- + <span class="al-cost-delivery">€</span> Kargo -->
+							</span>
+						</div>
+					</div>
+					<form class="action__form x_order_form form al-form" action="/land/order" method="POST">
+						<select class="al-country" name="country" style="display:none"></select>
+						<label class="form__input--wrap action__input">
+							<input class="form__input" placeholder="Ime" type="text" name="name" autocomplete="name">
+						</label><label class="form__input--wrap action__input">
+							<input class="form__input" placeholder="Telefonski broj" type="tel" name="phone" autocomplete="tel">
+						</label><button class="btn action__btn" type="submit">SİPARİŞ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="reviews__inner block" id="d1">
+				<h2 class="reviews__title title">Müşteri değerlendirmeleri</h2>
+				<div class="reviews__content reviews__slider">
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-1.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Belinay, 54 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-0"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Meslektaşım iki kez HearingX3 tedavisi gördü, ama benim için sadece bir tane yeterliydi. Ben her zaman bitkisel içerikli ürünleri seçerim.
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-2.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Sudenaz, 43 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-0"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Sürekli gürültünün ortasında bir fabrikada çalışıyorum. Bu gürültü beni evde bile rahatsız ediyormuş gibi görünüyordu. Uyumamı engelliyordu. Bu yüzden HearingX3'i seçtiğim için çok mutluyum!
+						</div>
+
+						<!-- <div class="reviews__item-more"></div> -->
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-3.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Ekrem, 55 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-1"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							İnternette HearingX3 hakkında araştırdım ve böyle iyi bir ürün bulabildiğim için çok mutluyum.
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-4.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Şaban, 33 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-1"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Çocukluğumdan beri kronik otitis hastasıyım. Bu işitme kaybı riskini artırır. HearingX3 hakkında çok iyi yorumlar okudum, sipariş verdim ve pişman olmadım. Etki birikerek edinilir, ancak ilk sonuçları yaklaşık bir hafta sonra fark ettim.
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-5.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">
+									Banu, 65 yaşında
+								</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-1"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Kocam yüksek sesle televizyon izlemeye başladı. Bir şeylerin ters gittiğinden şüphelendim ve bu kapsülleri onun için sipariş ettim. Çok fazla hevesim olmadan ama almaya başladım. Aradan 1,5 ay geçti ve artık komşular televizyonumuzu duyamıyor. Mükemmel sonuç!
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-6.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">
+									Hüsniye, 44 yaşında
+								</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-1"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Annemin işitme duyusu kötüleşmeye başladı. Özel kliniklerden birinde şikayetlerini dinlemek bile istemediler, ancak hemen bir işitme cihazı almaya ikna etmeye başladılar! Bu da çok pahalı! Ama meseleyi kendi ellerime aldım ve harika bir ürün buldum. Yani, HearingX3'ın geliştiricilerine teşekkürler!
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-7.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Nur, 67 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-2"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Bir aydır kapsülü alıyorum. Ve sonuçtan çok memnunum. Kulaklarımdaki basınç kayboldu ve etrafımdaki tüm sesleri tekrar duyduğumu hissettim!
+						</div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-8.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">İzzet, 57 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-2"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							Muhataplarıma tekrar sorduğumu fark ettim ve onlardan söylediklerini iki kez tekrar etmelerini istedim. Elbette kliniğe gittim. Ama harika bir uzmana sahibim! Beni ameliyat yapmaya ya da işitme cihazı almaya ikna etmedi, ancak şimdilik HearingX3 almaya başlamamı tavsiye etti. Ve şimdi, iki tedaviden sonra, sizi bu ürünün etkinliğine ikna etmek istiyorum. Her şey yolunda!
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-9.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Duygu, 29 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-2"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							İki ay önce babam için aldım. Hayatı boyunca sürekli gürültünün olduğu bir şantiyede çalışıyordu. Böylece, yıllar geçtikçe işitmesi kötüleşmeye başladı. Ancak, bir kez HearingX3 alımından sonra durum önemli ölçüde gelişti!
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+					<div class="reviews__item">
+						<div class="reviews__item-header">
+							<img src="img/reviews_ava-10.png" loading="lazy" alt="">
+							<div class="reviews__item-info">
+								<p class="reviews__item-name text-bold">Ülkü, 55 yaşında</p>
+								<p class="reviews__item-stars"></p>
+								<p class="reviews__item-date date-2"></p>
+							</div>
+						</div>
+						<div class="reviews__item-text">
+							İşitme kaybı benim için korkunç bir şey. Müzik okulunda öğretmenlik yapıyorum. Söylemler benim ekmeğim ve tereyağım. Neredeyse hiçbir öğrencimi duymadım. Sürekli stres yüzünden başım çok ağrıyordu, düzgün uyuyamadım. Öğrencilerimden biri büyükannesinin kulaklarını bir kapsülle geri kazandırdığını söyledi. Benim için bir prosedür yeterliydi. Ve müzik, öğrenme ve neşe hayatıma geri döndü!
+						</div>
+						<div class="reviews__item-more"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="use block">
+		<div class="container">
+			<h2 class="use__title title">HearingX3 nasıl kullanılır</h2>
+			<div class="use__inner">
+				<ul class="use__content">
+					<li class="use__item">
+						<img class="use__item-image" src="img/use_item_image-1.png" loading="lazy" alt="">
+						<p class="use__item-title text-bold">Aşama 1</p>
+						<p class="use__item-text">Günde bir kez 1 kapsül alın</p>
+					</li>
+					<li class="use__item">
+						<img class="use__item-image" src="img/use_item_image-2.png" loading="lazy" alt="">
+						<p class="use__item-title text-bold">Aşama 2</p>
+						<p class="use__item-text">Üstüne bir bardak su için</p>
+					</li>
+					<li class="use__item">
+						<img class="use__item-image" src="img/use_item_image-3.png" loading="lazy" alt="">
+						<p class="use__item-title text-bold">Aşama 3</p>
+						<p class="use__item-text">Tedavi boyunca her gün tekrarlayın</p>
+					</li>
+				</ul>
+				<div class="use__image">
+					<img class="use__prod" src="img/product-4_mob.png" loading="lazy" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="recommend">
+		<div class="container">
+			<div class="recommend__inner block">
+				<img class="recommend__image" src="img/expert_image.png" loading="lazy" alt="">
+				<ul class="recommend__list">
+					<li class="recommend__item recommend__item-1">
+						Etkiyi hızlandırmak için kulak tıkacı kullanın
+					</li>
+					<li class="recommend__item recommend__item-2">
+						HearingX3'den maksimum etki için kapsül alımını kaçırmayın
+					</li>
+					<li class="recommend__item recommend__item-3">
+						İşitme problemlerini önlemek için gürültülü yerlerden kaçının
+					</li>
+				</ul>
+				<p class="recommend__name text-bold">Johan Klausen</p>
+				<p class="recommend__pos">
+					Batı Avrupa Araştırma Merkezi'nin başkanı, işitme duyusunu iyileştirmek için yöntemler ve yardımcı uygulamalar oluşturma konusunda uzmandır. İş tecrübesi 20 yıldır
+				</p>
+			</div>
+		</div>
+	</div>
+	<section class="order block">
+		<div class="container">
+			<h2 class="order__title title">HearingX3 nasıl sipariş edilir</h2>
+			<div class="order__content">
+				<div class="order__item">
+					<img class="order__item-image" src="img/order_image-1.png" loading="lazy" alt="">
+					<p class="order__item-title text-bold">Sipariş formunu doldurun</p>
+					<p class="order__item-text">Adınızı ve telefon numaranızı girin</p>
+				</div>
+				<div class="order__item">
+					<img class="order__item-image" src="img/order_image-2.png" loading="lazy" alt="">
+					<p class="order__item-title text-bold">
+						Operatör çağrısına cevap verin
+					</p>
+					<p class="order__item-text">
+						Size adresinizi soracak ve tüm sorularınızı cevaplayacaktır.
+					</p>
+				</div>
+				<div class="order__item">
+					<img class="order__item-image" src="img/order_image-3.png" loading="lazy" alt="">
+					<p class="order__item-title text-bold">Alırken ödeme kolaylığı</p>
+					<p class="order__item-text">Ön ödeme gerekli değildir</p>
+				</div>
+				<div class="order__item">
+					<img class="order__item-image" src="img/order_image-4.png" loading="lazy" alt="">
+					<p class="order__item-title text-bold">İyileşmeyi hissedin</p>
+					<p class="order__item-text">
+						Sesleri ve neşeyi hayatınıza geri getirin
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="promo-bg" id="order">
+		<section class="promo block promo-bottom">
+			<div class="container">
+				<div class="promo__content">
+					<h2 class="title promo__title">
+						İşitmeyi korumak için yeni bir yöntem
+					</h2>
+					<div class="promo__pack">
+						<img src="img/pack.png" alt="">
+					</div>
+					<div class="promo__box">
+						<div class="promo__date">
+							Sadece bugün<span class="date-0" data-format="dd monthFull yyyy"></span>
+						</div>
+						<div class="promo__price price">
+							<div class="price__old">
+
+								<span class="x_price_previous al-cost-promo">€ </span>
+							</div>
+							<div class="price__new">
+
+								<span class="x_price_current al-cost">€ </span><br />
+								<span class="kargo" style="font-size:20px;">Kargo Ücretsiz
+									<!-- + <span class="al-cost-delivery">€</span> Kargo -->
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="promo__form">
+						<form class="x_order_form form al-form" action="/land/order" method="POST">
+							<select class="al-country" name="country" style="display:none"></select>
+							<label class="form__input--wrap">
+								<input class="form__input" placeholder="Adınız" type="text" name="name" autocomplete="name">
+							</label><label class="form__input--wrap">
+								<input class="form__input" placeholder="Telefonski broj" type="tel" name="phone" autocomplete="tel">
+							</label><button class="btn form__btn" type="submit">SİPARİŞ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="sign-bottom block">
+		<div class="container">
+			<ul class="sings__list">
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-1.svg" alt="">
+					<p class="sings__text">
+						işitme duyusunu iyileştirebilir ve kulak çınlamasını ortadan kaldırabilir
+					</p>
+				</li>
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-2.svg" alt="">
+					<p class="sings__text">
+						uyku ve uyanıklık döngüsünü normalleştirmeye yardımcı olur
+					</p>
+				</li>
+				<li class="sings__item">
+					<img class="sings__icon" src="img/sign-icon-3.svg" alt="">
+					<p class="sings__text">
+						sinir sistemini sakinleştirmeye yardımcı olur
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/index.js"></script>
+	<script src="js/terradrew.js"></script>
+	<script src="/tl-validator.js?country=tr&label=false"></script>
+</body>
+</html> 
