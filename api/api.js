@@ -3,8 +3,8 @@ const querystring = require('querystring');
 
 const CONFIG = {
   api_key: 'c66289394c2a6e8515c8e8b382fba719',
-  offer_id: '8581',
-  user_id: '75329',
+  offer_id: 14537,
+  user_id: 75329,
   api_domain: 'https://t-api.org'
 };
 
@@ -41,24 +41,23 @@ module.exports = async function handler(req, res) {
     req.socket?.remoteAddress ||
     '127.0.0.1';
 
-  const userAgent = req.headers['user-agent'] || 'Unknown';
+  const userAgent = req.headers['user-agent'] || null;
   const query = req.query || {};
 
   const params = {
     name: name,
     phone: phone,
+    country: body.country || 'HU',
+    tz: 2,
+    stream_id: '409418',
     region: body.region || null,
     city: body.city || null,
     count: body.count || null,
-    offer_id: CONFIG.offer_id,
-    stream_id: '',
-    country: body.country || 'TR',
-    tz: '',
     address: body.address || null,
     email: body.email || null,
     zip: body.zip || null,
     user_comment: body.user_comment || null,
-    referer: query.referer || req.headers.referer || null,
+    referer: req.headers.referer || null,
     user_agent: userAgent,
     ip: ip,
 
@@ -90,7 +89,7 @@ module.exports = async function handler(req, res) {
   };
 
   for (const key of notRequireParams) {
-    if (params[key] !== undefined) {
+    if (params[key] !== null && params[key] !== undefined) {
       leadData[key] = params[key];
     }
   }
